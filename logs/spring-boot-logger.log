@@ -1,0 +1,426 @@
+2022-04-11 21:29:53,935 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-04-11 21:29:53,992 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DealerSolutionApplication using Java 11.0.5 on DESKTOP-8V953QE with PID 11388 (D:\Projetos_desenvolvimento\React\dealer-solution\target\classes started by Lucas da Cruz in D:\Projetos_desenvolvimento\React\dealer-solution)
+2022-04-11 21:29:54,007 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-04-11 21:29:54,316 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-11 21:29:54,321 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-11 21:30:00,674 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-04-11 21:30:00,713 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-11 21:30:00,715 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-04-11 21:30:00,716 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-11 21:30:01,009 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-04-11 21:30:01,010 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 6682 ms
+2022-04-11 21:30:03,527 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-04-11 21:30:03,942 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-04-11 21:30:04,301 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2022-04-11 21:30:04,370 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-11 21:30:04,374 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2022-04-11 21:30:04,424 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2022-04-11 21:30:04,436 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+2022-04-11 21:30:04,890 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Pausing ProtocolHandler ["http-nio-8080"]
+2022-04-11 21:30:04,890 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2022-04-11 21:30:04,908 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping ProtocolHandler ["http-nio-8080"]
+2022-04-11 21:30:04,916 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Destroying ProtocolHandler ["http-nio-8080"]
+2022-04-11 21:30:04,931 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-11 21:30:04,982 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.exercise.dealersolution.DealerSolutionApplication.main(DealerSolutionApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NullPointerException: null
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:112)
+	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:109)
+	at com.google.common.collect.ComparatorOrdering.compare(ComparatorOrdering.java:37)
+	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
+	at java.base/java.util.TimSort.sort(TimSort.java:220)
+	at java.base/java.util.Arrays.sort(Arrays.java:1441)
+	at com.google.common.collect.Ordering.sortedCopy(Ordering.java:855)
+	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:57)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:138)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:135)
+	at com.google.common.collect.Iterators$7.transform(Iterators.java:750)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at com.google.common.collect.MultitransformedIterator.hasNext(MultitransformedIterator.java:52)
+	at com.google.common.collect.MultitransformedIterator.hasNext(MultitransformedIterator.java:50)
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:249)
+	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:209)
+	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:614)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.defaultContextBuilder(DocumentationPluginsBootstrapper.java:111)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.buildContext(DocumentationPluginsBootstrapper.java:96)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:167)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	... 19 common frames omitted
+2022-04-11 21:31:08,139 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.6.Final
+2022-04-11 21:31:08,147 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DealerSolutionApplication using Java 11.0.5 on DESKTOP-8V953QE with PID 4948 (D:\Projetos_desenvolvimento\React\dealer-solution\target\classes started by Lucas da Cruz in D:\Projetos_desenvolvimento\React\dealer-solution)
+2022-04-11 21:31:08,155 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-04-11 21:31:08,329 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-11 21:31:08,335 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-11 21:31:13,273 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-04-11 21:31:13,306 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-11 21:31:13,308 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-04-11 21:31:13,309 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-04-11 21:31:13,544 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-04-11 21:31:13,545 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 5208 ms
+2022-04-11 21:31:14,603 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-04-11 21:31:14,813 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-11 21:31:14,899 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-04-11 21:31:15,258 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2022-04-11 21:31:15,316 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-11 21:31:15,319 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2022-04-11 21:31:15,381 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2022-04-11 21:31:15,461 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2022-04-11 21:31:15,841 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started DealerSolutionApplication in 9.789 seconds (JVM running for 12.115)
+2022-04-11 21:34:31,965 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-11 21:34:31,994 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-04-11 21:34:32,355 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 359 ms
+2022-04-11 21:37:12,502 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-11 21:37:36,361 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.6.Final
+2022-04-11 21:37:36,412 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DealerSolutionApplication using Java 11.0.5 on DESKTOP-8V953QE with PID 3680 (D:\Projetos_desenvolvimento\React\dealer-solution\target\classes started by Lucas da Cruz in D:\Projetos_desenvolvimento\React\dealer-solution)
+2022-04-11 21:37:36,433 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-04-11 21:37:36,610 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-11 21:37:36,611 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-11 21:37:41,607 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-04-11 21:37:41,640 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-11 21:37:41,642 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-04-11 21:37:41,643 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-04-11 21:37:41,854 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-04-11 21:37:41,854 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 5239 ms
+2022-04-11 21:37:43,912 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-04-11 21:37:44,249 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-11 21:37:44,337 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-04-11 21:37:44,865 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2022-04-11 21:37:44,961 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-11 21:37:44,963 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2022-04-11 21:37:45,025 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2022-04-11 21:37:45,110 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2022-04-11 21:37:45,551 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started DealerSolutionApplication in 12.261 seconds (JVM running for 15.749)
+2022-04-11 21:37:45,563 INFO com.exercise.dealersolution.DealerSolutionApplication [restartedMain] Dealer-solution - 2022-04-11T21:37:45.563910100 - Aplicação Dealer Solution inicializada
+2022-04-11 21:39:50,905 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-11 21:40:19,319 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.6.Final
+2022-04-11 21:40:19,336 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DealerSolutionApplication using Java 11.0.5 on DESKTOP-8V953QE with PID 9364 (D:\Projetos_desenvolvimento\React\dealer-solution\target\classes started by Lucas da Cruz in D:\Projetos_desenvolvimento\React\dealer-solution)
+2022-04-11 21:40:19,341 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-04-11 21:40:19,617 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-11 21:40:19,618 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-11 21:40:27,085 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-04-11 21:40:27,124 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-11 21:40:27,136 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-04-11 21:40:27,137 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-04-11 21:40:27,370 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-04-11 21:40:27,371 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 7750 ms
+2022-04-11 21:40:31,648 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 13 endpoint(s) beneath base path '/actuator'
+2022-04-11 21:40:31,893 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-04-11 21:40:32,465 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-11 21:40:32,695 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-04-11 21:40:33,478 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2022-04-11 21:40:33,716 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-11 21:40:33,758 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2022-04-11 21:40:34,039 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2022-04-11 21:40:34,543 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2022-04-11 21:40:35,247 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started DealerSolutionApplication in 18.749 seconds (JVM running for 21.763)
+2022-04-11 21:40:35,518 INFO com.exercise.dealersolution.DealerSolutionApplication [restartedMain] Dealer-solution - 2022-04-11T21:40:35.518813400 - Aplicação Dealer Solution inicializada
+2022-04-11 21:41:03,388 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-11 21:41:03,389 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-04-11 21:41:03,395 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 5 ms
+2022-04-11 22:11:20,657 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-4] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-11 22:11:21,862 INFO com.exercise.dealersolution.DealerSolutionApplication [restartedMain] Dealer-solution - 2022-04-11T22:11:21.861338600 - Iniciando aplicação Dealer Solution
+2022-04-11 22:11:22,762 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DealerSolutionApplication using Java 11.0.5 on DESKTOP-8V953QE with PID 9364 (D:\Projetos_desenvolvimento\React\dealer-solution\target\classes started by Lucas da Cruz in D:\Projetos_desenvolvimento\React\dealer-solution)
+2022-04-11 22:11:22,768 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-04-11 22:11:26,718 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-04-11 22:11:26,721 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-11 22:11:26,723 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-04-11 22:11:26,726 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-04-11 22:11:26,873 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-04-11 22:11:26,875 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4070 ms
+2022-04-11 22:11:27,420 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-11 22:11:28,131 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-04-11 22:11:28,168 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 13 endpoint(s) beneath base path '/actuator'
+2022-04-11 22:11:28,274 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2022-04-11 22:11:28,283 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-11 22:11:28,314 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started DealerSolutionApplication in 6.341 seconds (JVM running for 1874.83)
+2022-04-11 22:11:28,348 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2022-04-11 22:11:28,367 INFO com.exercise.dealersolution.DealerSolutionApplication [restartedMain] Dealer-solution - 2022-04-11T22:11:28.365336500 - Aplicação Dealer Solution inicializada
+2022-04-11 22:11:33,600 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-8] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-11 22:11:33,911 INFO com.exercise.dealersolution.DealerSolutionApplication [restartedMain] Dealer-solution - 2022-04-11T22:11:33.910334400 - Iniciando aplicação Dealer Solution
+2022-04-11 22:11:34,115 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DealerSolutionApplication using Java 11.0.5 on DESKTOP-8V953QE with PID 9364 (D:\Projetos_desenvolvimento\React\dealer-solution\target\classes started by Lucas da Cruz in D:\Projetos_desenvolvimento\React\dealer-solution)
+2022-04-11 22:11:34,115 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-04-11 22:11:39,500 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-04-11 22:11:39,562 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-11 22:11:39,563 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-04-11 22:11:39,564 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-04-11 22:11:39,779 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-04-11 22:11:39,780 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 5656 ms
+2022-04-11 22:11:42,459 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 13 endpoint(s) beneath base path '/actuator'
+2022-04-11 22:11:42,624 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-04-11 22:11:43,284 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-11 22:11:43,291 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-04-11 22:11:43,790 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2022-04-11 22:11:43,832 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-11 22:11:43,885 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2022-04-11 22:11:43,953 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2022-04-11 22:11:44,143 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2022-04-11 22:11:44,478 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started DealerSolutionApplication in 10.548 seconds (JVM running for 1890.994)
+2022-04-11 22:11:44,517 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   Swagger2DocumentationConfiguration matched:
+      - @ConditionalOnWebApplication (required) found 'session' scope (OnWebApplicationCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2022-04-11 22:11:44,524 INFO com.exercise.dealersolution.DealerSolutionApplication [restartedMain] Dealer-solution - 2022-04-11T22:11:44.524515800 - Aplicação Dealer Solution inicializada
+2022-04-11 22:15:58,514 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-11 22:15:58,562 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-04-11 22:15:58,673 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 111 ms
+2022-04-11 22:32:14,859 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-13] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-11 22:32:16,376 INFO com.exercise.dealersolution.DealerSolutionApplication [restartedMain] Dealer-solution - 2022-04-11T22:32:16.375342500 - Iniciando aplicação Dealer Solution
+2022-04-11 22:32:16,761 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DealerSolutionApplication using Java 11.0.5 on DESKTOP-8V953QE with PID 9364 (D:\Projetos_desenvolvimento\React\dealer-solution\target\classes started by Lucas da Cruz in D:\Projetos_desenvolvimento\React\dealer-solution)
+2022-04-11 22:32:16,765 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-04-11 22:32:21,097 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-04-11 22:32:21,099 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-11 22:32:21,101 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-04-11 22:32:21,102 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-04-11 22:32:21,265 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-04-11 22:32:21,266 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4481 ms
+2022-04-11 22:32:22,402 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 13 endpoint(s) beneath base path '/actuator'
+2022-04-11 22:32:22,459 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-04-11 22:32:23,173 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-11 22:32:23,194 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-04-11 22:32:24,553 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2022-04-11 22:32:24,655 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-11 22:32:24,709 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2022-04-11 22:32:24,721 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2022-04-11 22:32:24,989 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2022-04-11 22:32:25,213 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started DealerSolutionApplication in 8.78 seconds (JVM running for 3131.729)
+2022-04-11 22:32:25,258 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2022-04-11 22:32:25,287 INFO com.exercise.dealersolution.DealerSolutionApplication [restartedMain] Dealer-solution - 2022-04-11T22:32:25.280504900 - Aplicação Dealer Solution inicializada
+2022-04-11 22:32:27,266 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-18] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-11 22:32:27,442 INFO com.exercise.dealersolution.DealerSolutionApplication [restartedMain] Dealer-solution - 2022-04-11T22:32:27.441727500 - Iniciando aplicação Dealer Solution
+2022-04-11 22:32:28,120 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DealerSolutionApplication using Java 11.0.5 on DESKTOP-8V953QE with PID 9364 (D:\Projetos_desenvolvimento\React\dealer-solution\target\classes started by Lucas da Cruz in D:\Projetos_desenvolvimento\React\dealer-solution)
+2022-04-11 22:32:28,122 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-04-11 22:32:30,808 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-04-11 22:32:30,846 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-11 22:32:30,847 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-04-11 22:32:30,848 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-04-11 22:32:30,936 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-04-11 22:32:30,949 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2814 ms
+2022-04-11 22:32:32,078 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 13 endpoint(s) beneath base path '/actuator'
+2022-04-11 22:32:32,205 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-04-11 22:32:32,402 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-11 22:32:32,411 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-04-11 22:32:32,708 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2022-04-11 22:32:32,718 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-11 22:32:32,720 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2022-04-11 22:32:32,725 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2022-04-11 22:32:32,783 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2022-04-11 22:32:33,011 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started DealerSolutionApplication in 5.524 seconds (JVM running for 3139.527)
+2022-04-11 22:32:33,017 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2022-04-11 22:32:33,019 INFO com.exercise.dealersolution.DealerSolutionApplication [restartedMain] Dealer-solution - 2022-04-11T22:32:33.019864100 - Aplicação Dealer Solution inicializada
+2022-04-11 23:20:16,171 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-23] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-11 23:20:17,518 INFO com.exercise.dealersolution.DealerSolutionApplication [restartedMain] Dealer-solution - 2022-04-11T23:20:17.516745500 - Iniciando aplicação Dealer Solution
+2022-04-11 23:20:17,822 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DealerSolutionApplication using Java 11.0.5 on DESKTOP-8V953QE with PID 9364 (D:\Projetos_desenvolvimento\React\dealer-solution\target\classes started by Lucas da Cruz in D:\Projetos_desenvolvimento\React\dealer-solution)
+2022-04-11 23:20:17,825 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-04-11 23:20:22,866 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-04-11 23:20:22,873 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-11 23:20:22,875 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-04-11 23:20:22,876 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-04-11 23:20:23,155 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-04-11 23:20:23,157 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 5313 ms
+2022-04-11 23:20:23,578 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl' defined in file [D:\Projetos_desenvolvimento\React\dealer-solution\target\classes\com\exercise\dealersolution\business\impl\ProductServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.exercise.dealersolution.repository.ProductRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-04-11 23:20:23,581 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2022-04-11 23:20:23,633 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-11 23:20:23,744 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.exercise.dealersolution.business.impl.ProductServiceImpl required a bean of type 'com.exercise.dealersolution.repository.ProductRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.exercise.dealersolution.repository.ProductRepository' in your configuration.
+
+2022-04-11 23:20:25,312 INFO com.exercise.dealersolution.DealerSolutionApplication [restartedMain] Dealer-solution - 2022-04-11T23:20:25.311274300 - Iniciando aplicação Dealer Solution
+2022-04-11 23:20:25,545 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DealerSolutionApplication using Java 11.0.5 on DESKTOP-8V953QE with PID 9364 (D:\Projetos_desenvolvimento\React\dealer-solution\target\classes started by Lucas da Cruz in D:\Projetos_desenvolvimento\React\dealer-solution)
+2022-04-11 23:20:25,546 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-04-11 23:20:29,048 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-04-11 23:20:29,051 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-11 23:20:29,053 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-04-11 23:20:29,054 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-04-11 23:20:29,228 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-04-11 23:20:29,229 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3675 ms
+2022-04-11 23:20:30,236 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 13 endpoint(s) beneath base path '/actuator'
+2022-04-11 23:20:30,381 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-04-11 23:20:30,623 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-11 23:20:30,643 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-04-11 23:20:30,908 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2022-04-11 23:20:30,920 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-11 23:20:30,931 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2022-04-11 23:20:30,944 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2022-04-11 23:20:31,003 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2022-04-11 23:20:32,000 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started DealerSolutionApplication in 6.657 seconds (JVM running for 6018.516)
+2022-04-11 23:20:32,012 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2022-04-11 23:20:32,014 INFO com.exercise.dealersolution.DealerSolutionApplication [restartedMain] Dealer-solution - 2022-04-11T23:20:32.014274100 - Aplicação Dealer Solution inicializada
+2022-04-11 23:22:27,359 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.6.Final
+2022-04-11 23:22:27,366 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DealerSolutionApplication using Java 11.0.5 on DESKTOP-8V953QE with PID 8688 (D:\Projetos_desenvolvimento\React\dealer-solution\target\classes started by Lucas da Cruz in D:\Projetos_desenvolvimento\React\dealer-solution)
+2022-04-11 23:22:27,370 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-04-11 23:22:27,630 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-11 23:22:27,631 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-11 23:22:35,465 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-04-11 23:22:35,513 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-11 23:22:35,515 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-04-11 23:22:35,520 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-04-11 23:22:36,365 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-04-11 23:22:36,365 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 8732 ms
+2022-04-11 23:22:39,271 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 13 endpoint(s) beneath base path '/actuator'
+2022-04-11 23:22:39,537 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-04-11 23:22:39,806 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-11 23:22:39,868 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2022-04-11 23:22:40,645 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2022-04-11 23:22:40,676 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2022-04-11 23:22:40,679 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-11 23:22:40,693 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Pausing ProtocolHandler ["http-nio-8080"]
+2022-04-11 23:22:40,694 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2022-04-11 23:22:40,716 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping ProtocolHandler ["http-nio-8080"]
+2022-04-11 23:22:40,717 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Destroying ProtocolHandler ["http-nio-8080"]
+2022-04-11 23:22:40,745 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-11 23:22:40,820 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2022-04-11 23:23:11,391 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-11 23:23:22,839 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.6.Final
+2022-04-11 23:23:22,865 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DealerSolutionApplication using Java 11.0.5 on DESKTOP-8V953QE with PID 11712 (D:\Projetos_desenvolvimento\React\dealer-solution\target\classes started by Lucas da Cruz in D:\Projetos_desenvolvimento\React\dealer-solution)
+2022-04-11 23:23:22,874 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-04-11 23:23:23,141 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-11 23:23:23,143 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-11 23:23:29,617 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-04-11 23:23:29,654 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-11 23:23:29,656 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-04-11 23:23:29,658 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-04-11 23:23:29,996 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-04-11 23:23:29,998 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 6853 ms
+2022-04-11 23:23:32,722 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 13 endpoint(s) beneath base path '/actuator'
+2022-04-11 23:23:32,966 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-04-11 23:23:33,274 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-11 23:23:33,354 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-04-11 23:23:33,999 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2022-04-11 23:23:34,095 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-11 23:23:34,099 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2022-04-11 23:23:34,257 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2022-04-11 23:23:34,373 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2022-04-11 23:23:34,843 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started DealerSolutionApplication in 14.36 seconds (JVM running for 17.149)
+2022-04-11 23:23:34,986 INFO com.exercise.dealersolution.DealerSolutionApplication [restartedMain] Dealer-solution - 2022-04-11T23:23:34.986411500 - Aplicação Dealer Solution inicializada
+2022-04-11 23:23:48,731 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-11 23:23:48,732 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-04-11 23:23:48,737 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 4 ms
+2022-04-11 23:23:48,827 INFO com.exercise.dealersolution.controller.ProductController [http-nio-8080-exec-1] Dealer-solution - 2022-04-11T23:23:48.827255300 - Iniciando busca de todos os produtos
+2022-04-11 23:24:06,559 INFO com.exercise.dealersolution.controller.ProductController [http-nio-8080-exec-3] Dealer-solution - 2022-04-11T23:24:06.556329100 - Iniciando busca de todos os produtos com status igual a 2
+2022-04-11 23:24:22,177 INFO com.exercise.dealersolution.controller.ProductController [http-nio-8080-exec-4] Dealer-solution - 2022-04-11T23:24:22.177425700 - Iniciando busca de data de deadLine para o ID produto 98668199-e442-459e-8d50-ada6db203776
+2022-04-11 23:24:24,696 INFO com.exercise.dealersolution.controller.ProductController [http-nio-8080-exec-5] Dealer-solution - 2022-04-11T23:24:24.696900400 - Iniciando busca de data de deadLine para o ID produto 98668199-e442-459e-8d50-ada6db203776
+2022-04-11 23:24:34,561 INFO com.exercise.dealersolution.controller.ProductController [http-nio-8080-exec-6] Dealer-solution - 2022-04-11T23:24:34.561859800 - Adicionando novo produto
+2022-04-11 23:24:40,037 INFO com.exercise.dealersolution.repository.impl.ProductRepositoryImpl [http-nio-8080-exec-6] Dealer-solution - 2022-04-11T23:24:40.037126200 - produto inserido ProductDomain(id=d157df28-1d7a-40b9-963f-520d2fffa0d0, description=hatch4, status=0, price=200000.0, quantity=10, deadLine=2022-12-12)
+2022-04-11 23:24:49,662 INFO com.exercise.dealersolution.controller.ProductController [http-nio-8080-exec-7] Dealer-solution - 2022-04-11T23:24:49.662352600 - Iniciando busca de todos os produtos
+2022-04-11 23:25:04,059 INFO com.exercise.dealersolution.controller.ProductController [http-nio-8080-exec-8] Dealer-solution - 2022-04-11T23:25:04.058943600 - Adicionando novo produto
+2022-04-11 23:25:04,062 INFO com.exercise.dealersolution.repository.impl.ProductRepositoryImpl [http-nio-8080-exec-8] Dealer-solution - 2022-04-11T23:25:04.062945800 - produto com id e9b63118-169b-46e8-a8f1-cfbe3375ef37 removido
+2022-04-11 23:25:04,064 INFO com.exercise.dealersolution.repository.impl.ProductRepositoryImpl [http-nio-8080-exec-8] Dealer-solution - 2022-04-11T23:25:04.064944400 - produto com id ba87d1be-e1b8-41e4-be9a-38dff66cdb54 removido
+2022-04-11 23:25:15,384 INFO com.exercise.dealersolution.controller.ProductController [http-nio-8080-exec-9] Dealer-solution - 2022-04-11T23:25:15.384925800 - Removendo o produto com id igual a e9b63118-169b-46e8-a8f1-cfbe3375ef37
+2022-04-11 23:25:15,386 INFO com.exercise.dealersolution.repository.impl.ProductRepositoryImpl [http-nio-8080-exec-9] Dealer-solution - 2022-04-11T23:25:15.386922 - produto com id e9b63118-169b-46e8-a8f1-cfbe3375ef37 removido
+2022-04-11 23:28:01,707 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-11 23:28:36,907 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.6.Final
+2022-04-11 23:28:36,924 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DealerSolutionApplication using Java 11.0.5 on DESKTOP-8V953QE with PID 11364 (D:\Projetos_desenvolvimento\React\dealer-solution\target\classes started by Lucas da Cruz in D:\Projetos_desenvolvimento\React\dealer-solution)
+2022-04-11 23:28:36,932 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-04-11 23:28:37,194 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-11 23:28:37,196 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-11 23:28:43,237 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-04-11 23:28:43,288 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-11 23:28:43,289 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-04-11 23:28:43,290 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-04-11 23:28:43,556 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-04-11 23:28:43,557 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 6359 ms
+2022-04-11 23:28:46,789 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 13 endpoint(s) beneath base path '/actuator'
+2022-04-11 23:28:47,007 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-04-11 23:28:47,258 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-11 23:28:47,319 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-04-11 23:28:47,789 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2022-04-11 23:28:47,850 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-11 23:28:47,852 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2022-04-11 23:28:47,946 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2022-04-11 23:28:48,063 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2022-04-11 23:28:48,449 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started DealerSolutionApplication in 14.885 seconds (JVM running for 17.847)
+2022-04-11 23:28:48,598 INFO com.exercise.dealersolution.DealerSolutionApplication [restartedMain] Dealer-solution - 2022-04-11T23:28:48.598132100 - Aplicação Dealer Solution inicializada
+2022-04-11 23:29:01,565 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-11 23:29:01,566 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-04-11 23:29:01,573 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 4 ms
+2022-04-11 23:29:01,946 INFO com.exercise.dealersolution.controller.ProductController [http-nio-8080-exec-2] Dealer-solution - 2022-04-11T23:29:01.946454900 - Iniciando busca de data de deadLine para o ID produto 98668199-e442-459e-8d50-ada6db203776
+2022-04-11 23:29:12,894 INFO com.exercise.dealersolution.controller.ProductController [http-nio-8080-exec-4] Dealer-solution - 2022-04-11T23:29:12.894069400 - Iniciando busca de todos os produtos
+2022-04-11 23:29:18,058 INFO com.exercise.dealersolution.controller.ProductController [http-nio-8080-exec-3] Dealer-solution - 2022-04-11T23:29:18.058235500 - Adicionando novo produto
+2022-04-11 23:29:18,063 INFO com.exercise.dealersolution.repository.impl.ProductRepositoryImpl [http-nio-8080-exec-3] Dealer-solution - 2022-04-11T23:29:18.063222600 - produto inserido ProductDomain(id=26d0115c-c577-4fc2-808d-c6fad97840f5, description=hatch4, status=0, price=200000.0, quantity=10, deadLine=2022-12-12)
+2022-04-11 23:29:38,420 INFO com.exercise.dealersolution.controller.ProductController [http-nio-8080-exec-6] Dealer-solution - 2022-04-11T23:29:38.420358800 - Iniciando busca de todos os produtos
+2022-04-11 23:29:52,693 INFO com.exercise.dealersolution.controller.ProductController [http-nio-8080-exec-5] Dealer-solution - 2022-04-11T23:29:52.693147400 - Adicionando novo produto
+2022-04-11 23:29:52,695 INFO com.exercise.dealersolution.repository.impl.ProductRepositoryImpl [http-nio-8080-exec-5] Dealer-solution - 2022-04-11T23:29:52.695144400 - produto com id e9b63118-169b-46e8-a8f1-cfbe3375ef37 removido
+2022-04-11 23:29:52,696 INFO com.exercise.dealersolution.repository.impl.ProductRepositoryImpl [http-nio-8080-exec-5] Dealer-solution - 2022-04-11T23:29:52.696145 - produto com id ba87d1be-e1b8-41e4-be9a-38dff66cdb54 removido
+2022-04-11 23:30:05,396 INFO com.exercise.dealersolution.controller.ProductController [http-nio-8080-exec-7] Dealer-solution - 2022-04-11T23:30:05.396827500 - Removendo o produto com id igual a 26d0115c-c577-4fc2-808d-c6fad97840f5
+2022-04-11 23:30:05,397 INFO com.exercise.dealersolution.repository.impl.ProductRepositoryImpl [http-nio-8080-exec-7] Dealer-solution - 2022-04-11T23:30:05.397824600 - produto com id 26d0115c-c577-4fc2-808d-c6fad97840f5 removido
